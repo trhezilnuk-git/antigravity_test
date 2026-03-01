@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PPTX Web Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Fonts and CSS libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    
+    <style>
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background: #0f172a; /* Slate 900 */
+            color: #f8fafc;
+            overflow: hidden;
+        }
+        
+        /* Modern Gradient Background Animation */
+        .bg-mesh {
+            position: absolute;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.15), transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.15), transparent 50%);
+            animation: pulse-bg 15s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-bg {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .reveal h2 { 
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            color: #38bdf8; /* Light Blue */
+            text-transform: none;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+            margin-bottom: 40px;
+        }
+        
+        /* Glassmorphism Slide Content */
+        .content-block { 
+            margin-top: 20px; 
+            text-align: center; 
+            background: rgba(255, 255, 255, 0.03);
+            padding: 50px 40px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .content-block:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+
+        .content-item { 
+            margin-bottom: 20px; 
+            font-size: 34px; 
+            color: #e2e8f0; 
+            line-height: 1.6; 
+            font-weight: 300;
+        }
+        
+        .content-item strong { color: #fff; font-weight: 600; }
+        
+        /* Reveal UI Elements */
+        .reveal .controls { color: #a855f7; }
+        .reveal .progress { color: #38bdf8; height: 4px; }
+        .reveal .slide-number { 
+            font-family: 'Outfit', sans-serif; 
+            font-size: 20px !important; 
+            color: rgba(255,255,255,0.6) !important; 
+            background: transparent !important; 
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-mesh"></div>
+    <div class="reveal">
+        <div class="slides">
+            <section><h2>Top 10 Modern AI Tools</h2><div class="content-block"><p class="content-item">An Overview of the Best AI Capabilities</p></div></section>\n<section><h2>1. ChatGPT (OpenAI)</h2><div class="content-block"><p class="content-item">Description: The most popular conversational AI.<br>Key Features:<br>- Advanced natural language understanding<br>- Code generation and debugging<br>- Data analysis and visualization</p></div></section>\n<section><h2>2. Claude 3 (Anthropic)</h2><div class="content-block"><p class="content-item">Description: A highly capable AI focusing on safety and large context.<br>Key Features:<br>- Massive context window (200k+ tokens)<br>- Excellent at reading long documents<br>- Nuanced and safer responses</p></div></section>\n<section><h2>3. Gemini (Google)</h2><div class="content-block"><p class="content-item">Description: Google's flagship multimodal AI model.<br>Key Features:<br>- Native multimodal support (text, image, audio, video)<br>- Deep integration with Google Workspace<br>- Real-time information access</p></div></section>\n<section><h2>4. Midjourney</h2><div class="content-block"><p class="content-item">Description: Leading AI image generation platform.<br>Key Features:<br>- Unbelievably high-quality images<br>- Incredibly artistic interpretations<br>- Operated primarily via Discord</p></div></section>\n<section><h2>5. GitHub Copilot</h2><div class="content-block"><p class="content-item">Description: The most popular AI pair programmer.<br>Key Features:<br>- Seamless IDE integration<br>- Real-time autocomplete for code<br>- Translates natural language to code</p></div></section>\n<section><h2>6. Perplexity AI</h2><div class="content-block"><p class="content-item">Description: AI-powered research and search engine.<br>Key Features:<br>- Real-time web citations<br>- Focuses on accuracy and sourcing<br>- Great for deep-dive research</p></div></section>\n<section><h2>7. Sora (OpenAI)</h2><div class="content-block"><p class="content-item">Description: Groundbreaking AI video generation model.<br>Key Features:<br>- Generates up to 1-minute realistic videos<br>- Follows complex prompt instructions<br>- Maintains physical coherence</p></div></section>\n<section><h2>8. Suno AI</h2><div class="content-block"><p class="content-item">Description: Advanced AI music generation tool.<br>Key Features:<br>- Generates full songs with vocals and instruments<br>- Variety of genres and styles<br>- High audio quality</p></div></section>\n<section><h2>9. Notion AI</h2><div class="content-block"><p class="content-item">Description: AI seamlessly integrated into Notion.<br>Key Features:<br>- Brainstorming and drafting<br>- Summarizing existing notes<br>- Translating and organizing content</p></div></section>\n<section><h2>10. ElevenLabs</h2><div class="content-block"><p class="content-item">Description: State-of-the-art AI voice generator.<br>Key Features:<br>- Extremely realistic text-to-speech<br>- Voice cloning capabilities<br>- Emotional range and inflection</p></div></section>\n
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            transition: 'convex',
+            backgroundTransition: 'fade',
+            center: true,
+            controlsTutorial: true
+        });
+    </script>
+</body>
+</html>
